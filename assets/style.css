@@ -202,3 +202,33 @@ main .descricao a {
 .educacao .status {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+/* MAIN SECTION PROJETOS */
+
+.projetos .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas de igual largura */
+    gap: 10px; /* Espaçamento entre os itens */
+    justify-items: center;
+    align-items: center;
+}
+
+.projetos .projeto {
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: 1px solid black;
+    height: 320px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.projeto .img {
+    height: 70%;
+    width: 100%;
+}
+
+.projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
