@@ -21,6 +21,9 @@ header {
     height: 100px;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000; /* controla a ordem de empilhamento dos elementos posicionados */
 }
 
 .menu {
@@ -84,6 +87,7 @@ header {
 /* MAIN SECTION INICIAL */
 
 main {
+    padding-top: 80px;
     width: 1040px;
     margin: auto;
 }
@@ -91,7 +95,7 @@ main {
 main .inicial {
     display: flex;
     padding-top: 100px;
-    height: calc(95vh - 100px);
+    height: calc(80vh - 100px);
 }
 
 main .img_container {
@@ -145,7 +149,7 @@ main .descricao a {
     font-size: 18px;
     text-align: justify;
     padding: 10px;
-    margin-bottom: 150px;
+    padding-top: 110px;
 }
 
 .title {
@@ -310,6 +314,8 @@ footer div {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    padding-bottom: 20px;
 }
 
 .createdBy {
